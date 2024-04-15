@@ -40,13 +40,18 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
+    display: flex;
 
 }
 
 /*Sección Title*/
 
 section.title{
-
+    display: flex;
+}
+.menu__title{
+    display: flex;
+    
 }
 
 /*Sección About*/
