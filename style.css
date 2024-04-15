@@ -1,14 +1,12 @@
 /*CSS Reset / Normalize*/
 /* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
 en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
+
 
 :root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+    /* Inserta la variable de los otros colores inspeccionando el ejemplo de figma */
+--cor-de-fundo: #F5F5F5;
+--cor-de-link: #000;
 }
 
 body {
