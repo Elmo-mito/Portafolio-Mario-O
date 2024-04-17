@@ -1,7 +1,7 @@
 /*CSS Reset / Normalize*/
 /* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
 en las secciones señaladas */
-
+@import url(reset.css);
 
 :root{
     /* Inserta la variable de los otros colores inspeccionando el ejemplo de figma */
@@ -16,7 +16,10 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
-}
+    display: flex;
+
+
+
 ol, ul,li {
     list-style: none;
 }
@@ -25,8 +28,7 @@ a{
     color: var(--cor-de-link);
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM.    
 Lo que es el BEM?
 
 BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
@@ -37,11 +39,16 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+
 /*Sección Menu*/
 
 section.menu{
     display: flex;
-
+    height: 60px;
+    background-color: red;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*Sección Title*/
