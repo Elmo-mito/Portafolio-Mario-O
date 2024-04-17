@@ -17,6 +17,7 @@ body {
     padding: 0;
     line-height: 1;
     display: flex;
+}
 
 
 
@@ -47,8 +48,20 @@ section.menu{
     height: 60px;
     background-color: red;
     padding: 0 30px;
-    align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
+    flex-direction: row;
+}
+.menu__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:  space-around;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.menu__list__item__contato{
+    
 }
 
 /*Sección Title*/
@@ -130,12 +143,12 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Skills*/
 
 /*Hobbies*/
- 
+
 /*Formación Académica*/
 
 /*Experiencia Profesional*/
 
- /*Contacto*/
+/*Contacto*/
 
 /*Footer*/
 
