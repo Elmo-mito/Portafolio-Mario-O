@@ -57,7 +57,7 @@ section.menu{
 .menu__list{
     display: flex;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 1.5rem;
     font-size: 21px;
     font-style: bold;
     border-radius: 15px;
@@ -238,40 +238,87 @@ section.experience{
 /*Contacto*/
 
 section.formcontato{
-
+background-color: #ADD8E6;
+opacity: 95%;
 }
 
 .formcontato__title{
-    margin-bottom: 35px;
-    margin-top: 35px;
+    margin-bottom: 15px;
+    margin-top: 55px;
     font-size: 40px;
 }
 
 /*footeer*/
 
 section.footer{
-
-}
-
-#contacto{
     display: flex;
-    flex-direction: row;
+    flex-flow: column;
+    gap: 2rem;
+    align-items: center;
+    grid-area: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
+
+
 
 .formcontato__text{
+    display: flex;
     font-size: 24px;
-    justify-content: left;
     gap: 1em;
     padding-bottom: 1em;
+    flex-direction: column;
 }
+
+.formcontato__form{
+    display: flex;
+    font-size: 24px;
+    gap: 1em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    
+}
+
+.formcontato__input{
+    font-size: large;
+    display: flex;
+    height: 50px;
+    width: 800px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.formcontato__textarea{
+    font-size: large;
+    display: flex;
+    height: 300px;
+    width: 800px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+   
+}
+
+
 .formcontato__img{
+    padding-top: 80px;
     display: flex;
     float: inline-end;
     margin-right: 50px;
-    border-radius: 10%;
-    width: 550px;
+    border-radius: 1%;
+    width: 500px;
+    height: 750px;
     
 }
+
+.formcontato__botao{
+    font-size: large;
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-self: center;
+}
+
+
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
