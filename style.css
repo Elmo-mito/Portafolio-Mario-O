@@ -5,7 +5,7 @@ en las secciones señaladas */
 
 :root{
  /* Inserta la variable de los otros colores inspeccionando el ejemplo de figma */
---cor-de-fundo: #F5F5F5;
+--cor-de-fundo: #e8dcca;
 --cor-de-link: #000;
 }
 
@@ -99,8 +99,12 @@ section.title{
     font-style: bold;
     
 }
+
+.title__network__item{
+    
+}
+
 .title__network__item:hover{
-    color: #000000;
     font-size: 25px;
     transition: 0.5s;
 }
@@ -150,20 +154,24 @@ section.title{
         align-items: center;
 
         }
+
+
+
+/*Sección "Sobre mi"*/
 .about{
-    background-color: #e7f3f8;
+    display: flex;
+    background-color: #e6e5e5;
 }
 .about__title{
-            padding-top: 120px;
             display: flex;
             color: #111111;
             font-size: 40px;
-            margin-top: 20px;
+            margin-top: 10px;
             margin-bottom: 15px;
         }
         
 .about__paragraph{
-                display: flex;
+            display: flex;
             color: #111111;
             font-size: 24px;
             margin-top: 10px;
@@ -253,15 +261,18 @@ section.hobbies{
 }
 
 .academic__title{
+    display: flex;
     margin-bottom: 35px;
     margin-top: 35px;
     font-size: 40px;
-    padding-left: 750px;
+    justify-content: center;
+    
 }
+
 
 .academic__courses{
     display: flex;
-    gap: 3rem;
+    gap: 5rem;
     text-align: center;
     font-size: 24px;
 }
@@ -392,8 +403,7 @@ section.footer{
 
 
 
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
+
 
 
 /*Tablet*/
