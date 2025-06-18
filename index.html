@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="" type="img.png">
+    
     <title> Portafolio Mario Ordoñez </title>
 </head>
 <body>
@@ -17,7 +18,7 @@
     <div class="tudo">
     <section class="menu">
         <header class="menu__header">
-            <img src="assets\vector.png">
+            <img class="imagen_controlcito" id="imagen_controlcito" src="./assets/control_colores.png">
             <h3 class="menu__title">Mario Arturo Ordoñez Gonzalez</h3>
         </header>
 
@@ -34,19 +35,22 @@
         </nav>
     </section>
 
-    <!-- Sección del Header/Title/Hero -->
+    <!-- Sección del Header/Title-->
     <section class="title">
         <div class="title__div">
             <img class="title__profile" src="assets/profile_momo.png">
             <div class="title__container">
                 <h2 class="title__bio">¡Hola! Mi nombre es Mario Ordoñez y soy egresado de la carrera Ingeniería en sistemas computacionales.</h2>
-                <h3 class="title__subsection">Actualmente en proceso de titulación, tengo experiencia laboral en el área de IT en Beckman Coulter de México. Principalmente dando soporte a usuario remota y presencialmente, dando mantenimiento preventivo y correctivo a equipos de cómputo, así como llevando casos de soporte mediante un sistema de tickets.</h3>
+                <p class="title__subsection">
+                    Actualmente me encuentro en proceso de titulación como Ingeniero en Sistemas Computacionales.
+                    He trabajado en soporte técnico y tareas administrativas en el <strong>INE</strong> y  <strong>Beckman Coulter de México</strong>, atendiendo incidencias, realizando mantenimiento a equipos y gestionando inventario.
+                    Asimismo complemento mi formación cursando el programa  <strong>Front-End Engineer</strong> en Codecademy.
+                </p>
                 <ul class="title__network">
-
                     <li class="title__network__item"><a href="https://github.com/Elmo-mito">Github <img src="assets\arrow.png"> </a></li>
                     <li class="title__network__item"><a href="https://www.linkedin.com/in/momo-ordonez/">Linkedin <img src="assets\arrow.png"></a></li>
                     <li class="title__network__item"><a href="https://www.instagram.com/momo_gonzz/">Instagram <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="CV Mario Arturo Ordoñez Gonzalez.pdf">Currículo <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="CV_Mario Ordoñez.pdf">Currículo <img src="assets\arrow.png"></a></li>
                 </ul>
             </div>
         </div>   
@@ -56,11 +60,14 @@
     <section class="about" id="sobre-mi">
         <div class="about__container">
             <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Soy un Ingeniero en Sistemas Computacionales, con experiencia en soporte IT. He adquirido habilidades sólidas en esta área y en la programación en general. Me gusta trabajar en entornos que desafíen mi capacidad técnica y mi creatividad, siempre buscando soluciones innovadoras.
-                Estoy interesado en seguir desarrollándome profesionalmente y en explorar nuevas oportunidades en el campo de la tecnología. Mi objetivo es continuar aprendiendo y aportar al desarrollo de proyectos que generen un impacto positivo.  </p>
-            <p class="about__paragraph">Me gustan mucho los videojuegos, hacer ejercicio y estar en constante aprendizaje, sobre todo en el área de la tecnología.</p>
-            <!-- Si quieres, pon tú firma acá! -->
-            <!-- <img src="assets\signature.png"> -->
+                <p class="about__paragraph">
+                    Soy un Ingeniero en Sistemas Computacionales con un fuerte interés por la tecnología, el soporte IT y el desarrollo web. Mi experiencia incluye la atención a usuarios, solución de incidencias técnicas, mantenimiento de equipos y gestión de activos en entornos corporativos y gubernamentales.
+                    Me considero una persona responsable, autodidacta y orientada al detalle. Disfruto resolver problemas de forma eficiente y clara, ya sea desde el área técnica o administrativa. Actualmente estoy fortaleciendo mis habilidades en desarrollo frontend a través del programa “Front-End Engineer” de Codecademy, donde practico tecnologías como HTML, CSS, JavaScript y Git.
+                    Estoy comprometido con mi crecimiento profesional y busco constantemente nuevas oportunidades para aprender, colaborar y aportar valor en proyectos tecnológicos.
+
+                    Además de la programación, me apasionan los videojuegos, el ejercicio y el aprendizaje continuo, especialmente en temas relacionados con innovación y tecnología.
+            </p>
+
         </div>
     </section>
 
@@ -151,76 +158,82 @@
 
         <!-- Sección de Formación académica -->
     <section class="academic" id="formacion">
-        <h2 class="academic__title" >Formación</h2>
+        <h3 class="academic__title" >Formación</h3>
         <div class="academic__courses">
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
+                    <!-- logo -->
                     <li class="academic__courses__item__img"><img src="assets/uveg.png"></li>
-                    <li class="academic__courses__item__title"><h4>Ingeniería en Sistemas Computacionales</h4></li>
+                    <li class="academic__courses__item__title"><p>Ingeniería en Sistemas Computacionales</p></li>
                     <li class="academic__courses__item__subtitle"><p>2021 - 2024</p></li>
                 </ul>
             </div>
+
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
-                    <!--Pon el logotipo de la institución de formación -->
+                    <!--logo-->
                     <li class="academic__courses__item__img"><img src="assets/beckman_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>Support IT</h4></li>
+                    <li class="academic__courses__item__title"><p>Support IT</p></li>
                     <li class="academic__courses__item__subtitle"><p>Enero/2023 - Agosto/2024</p></li>
+                </ul>
+            </div>
+
+            <div class="academic__courses__box">
+                <ul class="academic__courses__list">
+                    <!--logo-->
+                    <li class="academic__courses__item__img"><img src="./assets/Logo_INE.png"></li>
+                    <li class="academic__courses__item__title"><p>Apoyo Administrativo Secretarial</p></li>
+                    <li class="academic__courses__item__subtitle"><p>Febrero/2025 - Agosto/2025</p></li>
                 </ul>
             </div>
 
         </div>
     </section>
 
-    <section class="experiencia__prof">  
-    
         <!-- Sección de Experiencia Profesional/Proyectos-->
+    <section class="experiencia__prof">
+    
             <section class="experience" id="xp">
-            <h2 class="experience__section__title" >Proyectos</h2>
-            <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/Encriptador.png">
-                <div class="experience__info"
-                    <h2 class="experience__title">Encriptador </h2>
-                    <h3 class="experience__text">Proyecto Alura</h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/Elmo-mito/Challenge-Encriptador"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                        <!-- <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>-->
-                        </div>
-                </div>
-            </div> 
-    
-            <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/Calculadora.png">
-                <div class="experience__info"
-                    <h2 class="experience__title">Calculadora</h2>
-                    <h3 class="experience__text">Proyecto Java </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/Elmo-mito/CalculadoraMOMO-UVEG-Topicos-avanzados-de-programacion"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <!-- <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>-->
-                        </div>
-                </div>
-            </div>  
-    
-    
-            <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/Aluraproject.png">
-                <div class="experience__info"
-                    <h2 class="experience__title">Página Alura</h2>
-                    <h3 class="experience__text">Proyecto Alura</h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/Elmo-mito/aluraplay-projecto-final-proyecto-base"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                        <!-- <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>-->
-                        </div>
-                </div>
-            </div>  
+                <h3 class="experience__section__title" >Proyectos</h3>
+                <div class="experiencie__box">
+                    <!-- Logo -->
+                    <img class="experience__img" src="assets/Encriptador.png">
+                    <div class="experience__info">
+                        <p class="experience__title">Encriptador </p>
+                        <h3 class="experience__text">Proyecto JS</h3>
+                            <div class="experience__description">
+                                    <span class="experience__repo"><a href="https://github.com/Elmo-mito/Challenge-Encriptador"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            </div>
+                    </div>
+                </div> 
+        
+                <div class="experiencie__box">
+                    <!-- Logo -->
+                    <img class="experience__img" src="assets/Calculadora.png">
+                    <div class="experience__info">
+                        <p class="experience__title">Calculadora</p>
+                        <h3 class="experience__text">Proyecto Java </h3>
+                            <div class="experience__description">
+                                    <span class="experience__repo"><a href="https://github.com/Elmo-mito/CalculadoraMOMO-UVEG-Topicos-avanzados-de-programacion"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            </div>
+                    </div>
+                </div>  
+        
+        
+                <div class="experiencie__box">
+                    <img class="experience__img" src="assets/Aluraproject.png">
+                    <div class="experience__info">
+                        <p class="experience__title">Página Alura</p>
+                        <h3 class="experience__text">Proyecto HTML/CSS</h3>
+                            <div class="experience__description">
+                                    <span class="experience__repo"><a href="https://github.com/Elmo-mito/aluraplay-projecto-final-proyecto-base"><button class="experiencia__botao--repo">Repositório</button></a>
+                                    </span>
+
+                            </div>
+                    </div>
+                </div>  
             </section> 
+    </section>        
 
         <!-- Sección de Contacto -->
         <section class="formcontato" id="contacto|">
@@ -229,9 +242,9 @@
                     <img class="formcontato__img" src="assets\contact_image.png">
                 </div>
                 <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+                    <p class="formcontato__title">Contacto</p>
+                    <p class="formcontato__subtext">¿Quieres contactarme?</p>
+                    <p class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto contigo lo antes posible. </p>
                     <form  class="formcontato__form" name="form" action="https://formsubmit.co/f02cf1c8015a9fa7961201eb63b10ac9" method="POST">
                         <input class="formcontato__input" type="text" name="nombre" name="email" placeholder="Nombre">
                         <input class="formcontato__input" type="email" name="email"  name="email" placeholder="E-mail">
@@ -245,13 +258,14 @@
 
         <!-- Sección de Footer -->
         <section class="footer">
-            <div class="footer__rodape">
+            <div class="footer_copy">
                 <p>Desarrollado por Mario Ordoñez</p>
                 <p>2024</p>
             </div>
         </section>
     </div>
- <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
+    <!--conexión a js-->
+    <script src="animacion.js"></script>
+
 </body>
 </html>

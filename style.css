@@ -3,16 +3,14 @@
 en las secciones señaladas */
 @import url(reset.css);
 
-:root{
- /* Inserta la variable de los otros colores inspeccionando el ejemplo de figma */
---cor-de-fundo: #e8dcca;
---cor-de-link: #000;
+strong{
+    font-weight: 700;
 }
 
 body {
     display: flex;
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo);
+    background-color: #f3eeff;
     font-family: 'Raleway';
     margin: 0;
     padding: 10px;
@@ -20,29 +18,19 @@ body {
     display: flex;
 }
 
-
+h3{
+    font-weight: 600;
+}
 
 ol, ul,li {
     list-style: none;
 }
 a{
     text-decoration: none;
-    color: var(--cor-de-link);
+    color: #000;
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM.    
-Lo que es el BEM?
 
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-
-/*Sección Menu*/
 
 section.menu{
     display: flex;
@@ -51,10 +39,17 @@ section.menu{
     justify-content:space-between;
     flex-flow: row nowrap;
     margin-top: 2rem;
-    background-color: #cdcdcd;
+    background-color: #ece3e3;
     border-radius: 8px;
-
 }
+
+.imagen_controlcito{
+    width: 3.5rem;
+    cursor: default;
+    transition: transform 0.3s;
+    height: auto;
+}
+
 .menu__list{
     display: flex;
     justify-content: space-around;
@@ -62,6 +57,7 @@ section.menu{
     font-size: 21px;
     font-style: bold;
     border-radius: 15px;
+    transition: 0.3s;
 
 }
 
@@ -97,20 +93,22 @@ section.title{
     font-size: 20px;
     font-style: italic;
     font-style: bold;
+    margin-bottom: 10px;
     
 }
 
 .title__network__item{
-    
+    transition: 0.5s;
 }
 
 .title__network__item:hover{
     font-size: 25px;
-    transition: 0.5s;
+        color: yellow;
 }
 
 .title__bio{
-    margin-top: 150px;
+    margin-top: 75px;
+    margin-bottom: 50px;
     font-size: 60px;
     justify-content: left;
     color: #464646;
@@ -122,6 +120,8 @@ section.title{
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     justify-content: left;
+    line-height: 2rem;
+
 }
 
 .title__profile{
@@ -160,7 +160,7 @@ section.title{
 /*Sección "Sobre mi"*/
 .about{
     display: flex;
-    background-color: #e6e5e5;
+    background-color: #ece3e3;
 }
 .about__title{
             display: flex;
@@ -168,6 +168,7 @@ section.title{
             font-size: 40px;
             margin-top: 10px;
             margin-bottom: 15px;
+            margin-left: 10px;            
         }
         
 .about__paragraph{
@@ -176,7 +177,9 @@ section.title{
             font-size: 24px;
             margin-top: 10px;
             margin-bottom: 10px;
+            margin-left: 10px;
             justify-content: left;
+            line-height: 1.8rem;
 
         }
 /*Sección Skills*/
@@ -279,6 +282,11 @@ section.hobbies{
 /* experiencia*/
 
 section.experience{
+    margin-top: 20px;
+    justify-content: center;
+}
+
+section.experience img{
 
 }
 
@@ -321,7 +329,7 @@ section.experience{
 /*Contacto*/
 
 section.formcontato{
-background-color: #ADD8E6;
+background-color: #bfa1c2;
 opacity: 95%;
 }
 
@@ -343,6 +351,9 @@ section.footer{
     padding-bottom: 2em;
 }
 
+.formcontato__title{
+    font-size: 5rem;
+}
 
 
 .formcontato__text{
@@ -351,6 +362,14 @@ section.footer{
     gap: 1em;
     padding-bottom: 1em;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.fomrcontacto__contacto{
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
 }
 
 .formcontato__form{
@@ -401,7 +420,16 @@ section.footer{
     align-self: center;
 }
 
+.footer{
+    display:inline-block;
+    justify-content:right
+}
 
+.footer_copy{
+    text-align: end;
+    font-size: 0.8rem;
+
+}
 
 
 
