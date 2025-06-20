@@ -48,7 +48,6 @@ section.menu{
     height: auto;
 }
 
-
 .menu__list{
     display: flex;
     justify-content: space-around;
@@ -59,10 +58,19 @@ section.menu{
     
 }
 
+.menu__list__item a{
+    transition: 0.5s;
+}
+
+
+.menu__list__item__contato{
+    display: flex;
+    padding-left: 1rem;
+}
+
 .menu__list a:hover{
     color: #837ff3;
     font-size: 1.8rem;
-    transition: 0.3s;
 }
 
 #correito:hover{
@@ -71,16 +79,6 @@ section.menu{
     transition: 0.3s;
 }
 
-.menu__title{
-    font-size: 28px;
-
-}
-
-
-.menu__list__item__contato{
-    display: flex;
-    padding-left: 1rem;
-}
 
 /*Sección Title*/
 
@@ -111,7 +109,12 @@ section.title{
 }
 
 .title__network__item:hover{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+}
+.title__network__item a:hover{
+    color: rgb(124, 162, 238);
+
+    
 }
 
 .title__bio{
@@ -124,11 +127,11 @@ section.title{
 
 
 .title__subsection{
-    font-size: 30px;
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     justify-content: left;
-    line-height: 2rem;
+    line-height: 1.2;
 
 }
 
@@ -187,7 +190,7 @@ section.title{
             margin-bottom: 10px;
             margin-left: 10px;
             justify-content: left;
-            line-height: 1.8rem;
+            line-height: 1.4;
 
         }
 /*Sección Skills*/
@@ -283,16 +286,13 @@ section.hobbies{
     text-align: center;
     font-size: 24px;
 }
-/* proyectos*/
+/* PROYECTOS*/
 
 section.experience{
     padding-top: 55px;
     padding-bottom: 55px;
     justify-content: center;
-}
-
-section.experience img{
-    
+    align-items: center;
 }
 
 
@@ -310,14 +310,32 @@ section.experience img{
     justify-content: center;
 }
 
+.experince{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .experiencie__box{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
     font-size: 24px;
     align-items: center;
     padding-bottom: 20px;
     background-color: #fbf3ff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);;
+}
+
+.experience__img{
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
 .experience__title{
